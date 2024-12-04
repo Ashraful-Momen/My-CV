@@ -1,0 +1,150 @@
+<svg viewBox="0 0 1000 2800" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1000" height="2800" fill="#ffffff"/>
+    
+    <!-- Left Sidebar -->
+    <rect x="0" y="0" width="300" height="2800" fill="#f1f5f9"/>
+    
+    <!-- Header Section -->
+    <g transform="translate(320, 40)">
+        <text x="0" y="0" font-size="36" font-weight="bold" fill="#1e3a8a">MD. ASHRAFUL MOMEN</text>
+        <text x="0" y="50" font-size="24" fill="#3b82f6">Full Stack Developer</text>
+        
+        <!-- Contact Info -->
+        <g transform="translate(0, 80)" font-size="14" fill="#4b5563">
+            <text x="0" y="0">📱 +880 1859385787</text>
+            <text x="0" y="25">📧 amshuvo64@gmail.com</text>
+            <text x="0" y="50">🌐 amshuvo64.wixsite.com/mysite</text>
+            <text x="0" y="75">💻 github.com/Ashraful-Momen</text>
+            <text x="0" y="100">🔗 linkedin.com/in/md-ashraful-momen-306771159</text>
+            <text x="0" y="125">📍 Mirpur, Dhaka, Bangladesh</text>
+        </g>
+    </g>
+    
+    <!-- Left Sidebar Content -->
+    <g transform="translate(20, 40)">
+        <text font-size="18" font-weight="bold" fill="#1e3a8a">Technical Skills</text>
+        
+        <!-- Skills Categories -->
+        <g transform="translate(0, 40)" font-size="14">
+            <text font-weight="bold" fill="#3b82f6">Frontend Development</text>
+            <text y="25" fill="#4b5563">• React.js with Redux</text>
+            <text y="45" fill="#4b5563">• JavaScript (ES6+)</text>
+            <text y="65" fill="#4b5563">• HTML5, CSS3, Bootstrap 5</text>
+            <text y="85" fill="#4b5563">• REST API Integration, Ajax</text>
+            
+            <text y="120" font-weight="bold" fill="#3b82f6">Backend Development</text>
+            <text y="145" fill="#4b5563">• Python (Django, DRF)</text>
+            <text y="165" fill="#4b5563">• PHP (Laravel)</text>
+            <text y="185" fill="#4b5563">• Celery, Redis, WebSockets</text>
+            <text y="205" fill="#4b5563">• Signal, Channel, Pytest</text>
+            <text y="225" fill="#4b5563">• Event, Listener, Broadcasting</text>
+            
+            <text y="260" font-weight="bold" fill="#3b82f6">DevOps & Tools</text>
+            <text y="285" fill="#4b5563">• Docker (Swarm)</text>
+            <text y="305" fill="#4b5563">• AWS (EC2, S3, EBS, RDBMS)</text>
+            <text y="325" fill="#4b5563">• Git/GitHub</text>
+            
+            <text y="360" font-weight="bold" fill="#3b82f6">Databases & Other</text>
+            <text y="385" fill="#4b5563">• MySQL, Firebase</text>
+            <text y="405" fill="#4b5563">• Redis, Caching</text>
+            <text y="425" fill="#4b5563">• Data Structures & Algorithms</text>
+        </g>
+        
+        <!-- Education -->
+        <g transform="translate(0, 500)">
+            <text font-size="18" font-weight="bold" fill="#1e3a8a">Education</text>
+            <text y="30" font-size="14" font-weight="bold" fill="#3b82f6">BSc in Computer Science and Engineering</text>
+            <text y="50" font-size="14" fill="#4b5563">Bangladesh University</text>
+            <text y="80" font-size="14" font-weight="bold" fill="#3b82f6">HSC</text>
+            <text y="100" font-size="14" fill="#4b5563">Bangladesh Navy College</text>
+        </g>
+        
+        <!-- Certifications -->
+        <g transform="translate(0, 650)">
+            <text font-size="18" font-weight="bold" fill="#1e3a8a">Certifications</text>
+            <g transform="translate(0, 30)" font-size="14" fill="#4b5563">
+                <text>• Python with Django (Udemy - Mosh Hamedani)</text>
+                <text y="25">• PHP with Laravel (BITM)</text>
+                <text y="50">• Ethical Hacking (Leads Training)</text>
+                <text y="75">• Web Design & Development (Creative IT)</text>
+            </g>
+        </g>
+
+        <!-- Languages -->
+        <g transform="translate(0, 800)">
+            <text font-size="18" font-weight="bold" fill="#1e3a8a">Languages</text>
+            <text y="30" font-size="14" fill="#4b5563">English - Professional Working</text>
+            <text y="50" font-size="14" fill="#4b5563">Bengali - Native</text>
+        </g>
+    </g>
+    
+    <!-- Main Content -->
+    <g transform="translate(320, 250)">
+        <!-- Professional Summary -->
+        <text font-size="22" font-weight="bold" fill="#1e3a8a">Professional Summary</text>
+        <text y="40" font-size="14" fill="#4b5563">A highly skilled Full Stack Engineer with 2+ years of experience in developing scalable web applications. Expertise in Python Django, PHP Laravel, and modern frontend frameworks. Proven track record in building secure, high-performance applications with focus on user experience and code quality.</text>
+        
+        <!-- Experience -->
+        <g transform="translate(0, 100)">
+            <text font-size="22" font-weight="bold" fill="#1e3a8a">Professional Experience</text>
+            
+            <!-- Current Position -->
+            <g transform="translate(0, 40)">
+                <text font-size="18" font-weight="bold" fill="#3b82f6">Full Stack Developer | Instasure Limited</text>
+                <text x="0" y="25" font-size="14" fill="#6b7280">April 2023 - Present</text>
+                <g transform="translate(20, 45)" font-size="14" fill="#4b5563">
+                    <text>• Developed comprehensive insurance management system with automated features</text>
+                    <text y="25">• Implemented real-time notification system for order tracking</text>
+                    <text y="50">• Built automated commission distribution and invoice generation system</text>
+                    <text y="75">• Integrated payment systems and optimized database performance</text>
+                </g>
+            </g>
+            
+            <!-- Second Position -->
+            <g transform="translate(0, 160)">
+                <text font-size="18" font-weight="bold" fill="#3b82f6">Full Stack Developer | Decodes Lab Limited</text>
+                <text x="0" y="25" font-size="14" fill="#6b7280">October 2022 - March 2023</text>
+                <g transform="translate(20, 45)" font-size="14" fill="#4b5563">
+                    <text>• Built scalable web applications using Django and React</text>
+                    <text y="25">• Implemented real-time chat functionality using WebSockets</text>
+                    <text y="50">• Developed RESTful APIs and integrated third-party services</text>
+                </g>
+            </g>
+
+            <!-- Third Position -->
+            <g transform="translate(0, 280)">
+                <text font-size="18" font-weight="bold" fill="#3b82f6">Full Stack Developer | ClickDigim</text>
+                <text x="0" y="25" font-size="14" fill="#6b7280">February 2022 - September 2022</text>
+                <g transform="translate(20, 45)" font-size="14" fill="#4b5563">
+                    <text>• Developed e-commerce platforms with payment integration</text>
+                    <text y="25">• Created custom authentication and authorization systems</text>
+                    <text y="50">• Built responsive web applications using modern frameworks</text>
+                </g>
+            </g>
+        </g>
+        
+        <!-- Key Projects -->
+        <g transform="translate(0, 500)">
+            <text font-size="22" font-weight="bold" fill="#1e3a8a">Key Projects</text>
+            
+            <g transform="translate(0, 40)">
+                <text font-size="16" font-weight="bold" fill="#3b82f6">Insurance Management System</text>
+                <text x="0" y="25" font-size="14" fill="#4b5563">Full-featured insurance platform with automated workflows, real-time notifications, and payment processing</text>
+                <text x="0" y="45" font-size="14" fill="#6b7280">Technologies: Laravel, MySQL, Redis, REST APIs</text>
+            </g>
+
+            <g transform="translate(0, 100)">
+                <text font-size="16" font-weight="bold" fill="#3b82f6">E-commerce Platform with Django DRF</text>
+                <text x="0" y="25" font-size="14" fill="#4b5563">Complete e-commerce solution with payment integration, order management, and real-time updates</text>
+                <text x="0" y="45" font-size="14" fill="#6b7280">Technologies: Django, DRF, Celery, Redis, React</text>
+            </g>
+
+            <g transform="translate(0, 160)">
+                <text font-size="16" font-weight="bold" fill="#3b82f6">Real-time Chat Application</text>
+                <text x="0" y="25" font-size="14" fill="#4b5563">Scalable chat system with room management and instant messaging capabilities</text>
+                <text x="0" y="45" font-size="14" fill="#6b7280">Technologies: Laravel, WebSockets, Vue.js</text>
+            </g>
+        </g>
+    </g>
+</svg>
