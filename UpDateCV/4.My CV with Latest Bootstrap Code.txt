@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Ashraful Momen - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --text-color: #4b5563;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: var(--text-color);
+            background-color: #f0f2f5;
+        }
+
+        /* A4 Size Container */
+        .a4-container {
+            width: 210mm;
+            height: 297mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+            .a4-container {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-break-inside-avoid {
+                break-inside: avoid;
+            }
+        }
+        
+        .sidebar {
+            background-color: #f1f5f9;
+            height: 100%;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.25rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .skill-category {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .contact-link {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+        
+        .experience-item {
+            padding: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            margin-bottom: 1rem;
+            background-color: #f8f9fa;
+        }
+        
+        .experience-item ul {
+            margin-bottom: 0;
+            padding-left: 1.2rem;
+        }
+        
+        .project-card {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .header-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .header-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.85rem;
+        }
+        
+        .skill-list li {
+            margin-bottom: 0.25rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .skill-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+
+        /* Download Button Styles */
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .smaller-text {
+            font-size: 0.85rem;
+        }
+
+        .very-small-text {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Download Button -->
+    <button onclick="window.print()" class="btn btn-primary download-btn no-print">
+        <i class="bi bi-download me-2"></i>Download PDF
+    </button>
+
+    <div class="a4-container">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <div class="col-4 sidebar">
+                <!-- Technical Skills -->
+                <div class="mb-4">
+                    <h3 class="section-title">Technical Skills</h3>
+                    
+                    <div class="skill-category">Frontend Development</div>
+                    <ul class="skill-list">
+                        <li>React.js with Redux</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML5, CSS3, Bootstrap 5</li>
+                        <li>REST API Integration, Ajax</li>
+                    </ul>
+
+                    <div class="skill-category">Backend Development</div>
+                    <ul class="skill-list">
+                        <li>Python (Django, DRF)</li>
+                        <li>PHP (Laravel)</li>
+                        <li>Celery, Redis, WebSockets</li>
+                        <li>Event, Listener, Broadcasting</li>
+                    </ul>
+
+                    <div class="skill-category">DevOps & Tools</div>
+                    <ul class="skill-list">
+                        <li>Docker (Swarm)</li>
+                        <li>AWS (EC2, S3, EBS, RDBMS)</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+
+                    <div class="skill-category">Databases & Other</div>
+                    <ul class="skill-list">
+                        <li>MySQL, Firebase, Redis</li>
+                        <li>Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="mb-4">
+                    <h3 class="section-title">Education</h3>
+                    <div class="mb-2 very-small-text">
+                        <div class="fw-bold text-primary">BSc in Computer Science</div>
+                        <div>Bangladesh University</div>
+                    </div>
+                    <div class="very-small-text">
+                        <div class="fw-bold text-primary">HSC</div>
+                        <div>Bangladesh Navy College</div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="mb-4">
+                    <h3 class="section-title">Certifications</h3>
+                    <ul class="skill-list">
+                        <li>Python with Django (Udemy)</li>
+                        <li>PHP with Laravel (BITM)</li>
+                        <li>Ethical Hacking (Leads Training)</li>
+                        <li>Web Design & Development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-8">
+                <div class="p-4">
+                    <!-- Header -->
+                    <header class="mb-4">
+                        <h1 class="header-name">MD. ASHRAFUL MOMEN</h1>
+                        <h2 class="header-title">Full Stack Developer</h2>
+                        
+                        <!-- Contact Info -->
+                        <div class="row very-small-text">
+                            <div class="col-6">
+                                <a href="tel:+8801859385787" class="contact-link">
+                                    <i class="bi bi-phone"></i>
+                                    +880 1859385787
+                                </a>
+                                <a href="mailto:amshuvo64@gmail.com" class="contact-link">
+                                    <i class="bi bi-envelope"></i>
+                                    amshuvo64@gmail.com
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://github.com/Ashraful-Momen" class="contact-link">
+                                    <i class="bi bi-github"></i>
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/md-ashraful-momen-306771159/" class="contact-link">
+                                    <i class="bi bi-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Professional Summary -->
+                    <section class="mb-4">
+                        <h3 class="section-title">Professional Summary</h3>
+                        <p class="smaller-text">Full Stack Engineer with 2+ years of experience building scalable web applications. Expert in Python Django, PHP Laravel, and modern frontend frameworks. Focus on performance optimization and code quality.</p>
+                    </section>
+
+                    <!-- Professional Experience -->
+                    <section class="mb-4 print-break-inside-avoid">
+                        <h3 class="section-title">Professional Experience</h3>
+                        
+                        <div class="experience-item">
+                            <h4 class="text-primary fw-bold smaller-text">Full Stack Developer | Instasure Limited</h4>
+                            <div class="text-muted mb-2 very-small-text">April 2023 - Present</div>
+                            <ul class="very-small-text">
+                                <li>Developed insurance management system with automated features</li>
+                                <li>Implemented real-time notification system</li>
+                                <li>Built automated commission distribution system</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h4 class="text-primary fw-bold smaller-text">Full Stack Developer | Decodes Lab Limited</h4>
+                            <div class="text-muted mb-2 very-small-text">October 2022 - March 2023</div>
+                            <ul class="very-small-text">
+                                <li>Built scalable web applications using Django and React</li>
+                                <li>Implemented real-time chat functionality</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h4 class="text-primary fw-bold smaller-text">Full Stack Developer | ClickDigim</h4>
+                            <div class="text-muted mb-2 very-small-text">February 2022 - September 2022</div>
+                            <ul class="very-small-text">
+                                <li>Developed e-commerce platforms with payment integration</li>
+                                <li>Created authentication and authorization systems</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Key Projects -->
+                    <section class="mb-4">
+                        <h3 class="section-title">Key Projects</h3>
+                        
+                        <div class="project-card">
+                            <h4 class="text-primary fw-bold smaller-text">Insurance Management System</h4>
+                            <p class="mb-1 very-small-text">Insurance platform with automated workflows and real-time notifications</p>
+                            <div class="text-muted very-small-text">Technologies: Laravel, MySQL, Redis, REST APIs</div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4 class="text-primary fw-bold smaller-text">E-commerce Platform</h4>
+                            <p class="mb-1 very-small-text">Complete e-commerce solution with payment integration</p>
+                            <div class="text-muted very-small-text">Technologies: Django, DRF, Celery, Redis, React</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
