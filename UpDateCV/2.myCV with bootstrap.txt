@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Ashraful Momen - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --text-color: #4b5563;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: var(--text-color);
+        }
+        
+        .sidebar {
+            background-color: #f1f5f9;
+            height: 100%;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-category {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-link {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link:hover {
+            color: var(--secondary-color);
+        }
+        
+        .experience-item {
+            padding: 1.5rem;
+            border-left: 3px solid var(--secondary-color);
+            margin-bottom: 1.5rem;
+            background-color: #f8f9fa;
+        }
+        
+        .project-card {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .header-title {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+        
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .skill-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <div class="sticky-top pt-4">
+                    <!-- Technical Skills -->
+                    <div class="mb-5">
+                        <h3 class="section-title">Technical Skills</h3>
+                        
+                        <div class="skill-category">Frontend Development</div>
+                        <ul class="skill-list">
+                            <li>React.js with Redux</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>HTML5, CSS3, Bootstrap 5</li>
+                            <li>REST API Integration, Ajax</li>
+                        </ul>
+
+                        <div class="skill-category">Backend Development</div>
+                        <ul class="skill-list">
+                            <li>Python (Django, DRF)</li>
+                            <li>PHP (Laravel)</li>
+                            <li>Celery, Redis, WebSockets</li>
+                            <li>Signal, Channel, Pytest</li>
+                            <li>Event, Listener, Broadcasting</li>
+                        </ul>
+
+                        <div class="skill-category">DevOps & Tools</div>
+                        <ul class="skill-list">
+                            <li>Docker (Swarm)</li>
+                            <li>AWS (EC2, S3, EBS, RDBMS)</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+
+                        <div class="skill-category">Databases & Other</div>
+                        <ul class="skill-list">
+                            <li>MySQL, Firebase</li>
+                            <li>Redis, Caching</li>
+                            <li>Data Structures & Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="mb-5">
+                        <h3 class="section-title">Education</h3>
+                        <div class="mb-3">
+                            <div class="fw-bold text-primary">BSc in Computer Science and Engineering</div>
+                            <div>Bangladesh University</div>
+                        </div>
+                        <div>
+                            <div class="fw-bold text-primary">HSC</div>
+                            <div>Bangladesh Navy College</div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="mb-5">
+                        <h3 class="section-title">Certifications</h3>
+                        <ul class="skill-list">
+                            <li>Python with Django (Udemy - Mosh Hamedani)</li>
+                            <li>PHP with Laravel (BITM)</li>
+                            <li>Ethical Hacking (Leads Training)</li>
+                            <li>Web Design & Development (Creative IT)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="mb-5">
+                        <h3 class="section-title">Languages</h3>
+                        <div>English - Professional Working</div>
+                        <div>Bengali - Native</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="p-4">
+                    <!-- Header -->
+                    <header class="mb-5">
+                        <h1 class="header-name">MD. ASHRAFUL MOMEN</h1>
+                        <h2 class="header-title mb-4">Full Stack Developer</h2>
+                        
+                        <!-- Contact Info -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="tel:+8801859385787" class="contact-link">
+                                    <i class="bi bi-phone"></i>
+                                    +880 1859385787
+                                </a>
+                                <a href="mailto:amshuvo64@gmail.com" class="contact-link">
+                                    <i class="bi bi-envelope"></i>
+                                    amshuvo64@gmail.com
+                                </a>
+                                <a href="https://amshuvo64.wixsite.com/mysite" class="contact-link">
+                                    <i class="bi bi-globe"></i>
+                                    Portfolio
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://github.com/Ashraful-Momen" class="contact-link">
+                                    <i class="bi bi-github"></i>
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/md-ashraful-momen-306771159/" class="contact-link">
+                                    <i class="bi bi-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                                <div class="contact-link">
+                                    <i class="bi bi-geo-alt"></i>
+                                    Mirpur, Dhaka, Bangladesh
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Professional Summary -->
+                    <section class="mb-5">
+                        <h3 class="section-title">Professional Summary</h3>
+                        <p>A highly skilled Full Stack Engineer with 2+ years of experience in developing scalable web applications. Expertise in Python Django, PHP Laravel, and modern frontend frameworks. Proven track record in building secure, high-performance applications with focus on user experience and code quality.</p>
+                    </section>
+
+                    <!-- Professional Experience -->
+                    <section class="mb-5">
+                        <h3 class="section-title">Professional Experience</h3>
+                        
+                        <div class="experience-item">
+                            <h4 class="text-primary fw-bold">Full Stack Developer | Instasure Limited</h4>
+                            <div class="text-muted mb-3">April 2023 - Present</div>
+                            <ul class="mb-0">
+                                <li>Developed comprehensive insurance management system with automated features</li>
+                                <li>Implemented real-time notification system for order tracking</li>
+                                <li>Built automated commission distribution and invoice generation system</li>
+                                <li>Integrated payment systems and optimized database performance</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h4 class="text-primary fw-bold">Full Stack Developer | Decodes Lab Limited</h4>
+                            <div class="text-muted mb-3">October 2022 - March 2023</div>
+                            <ul class="mb-0">
+                                <li>Built scalable web applications using Django and React</li>
+                                <li>Implemented real-time chat functionality using WebSockets</li>
+                                <li>Developed RESTful APIs and integrated third-party services</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h4 class="text-primary fw-bold">Full Stack Developer | ClickDigim</h4>
+                            <div class="text-muted mb-3">February 2022 - September 2022</div>
+                            <ul class="mb-0">
+                                <li>Developed e-commerce platforms with payment integration</li>
+                                <li>Created custom authentication and authorization systems</li>
+                                <li>Built responsive web applications using modern frameworks</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Key Projects -->
+                    <section class="mb-5">
+                        <h3 class="section-title">Key Projects</h3>
+                        
+                        <div class="project-card">
+                            <h4 class="text-primary fw-bold">Insurance Management System</h4>
+                            <p class="mb-2">Full-featured insurance platform with automated workflows, real-time notifications, and payment processing</p>
+                            <div class="text-muted"><strong>Technologies:</strong> Laravel, MySQL, Redis, REST APIs</div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4 class="text-primary fw-bold">E-commerce Platform with Django DRF</h4>
+                            <p class="mb-2">Complete e-commerce solution with payment integration, order management, and real-time updates</p>
+                            <div class="text-muted"><strong>Technologies:</strong> Django, DRF, Celery, Redis, React</div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4 class="text-primary fw-bold">Real-time Chat Application</h4>
+                            <p class="mb-2">Scalable chat system with room management and instant messaging capabilities</p>
+                            <div class="text-muted"><strong>Technologies:</strong> Laravel, WebSockets, Vue.js</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
