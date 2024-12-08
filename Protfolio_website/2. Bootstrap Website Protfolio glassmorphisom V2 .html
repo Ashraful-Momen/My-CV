@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashraful Momen - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+        
+        body {
+            background: linear-gradient(45deg, #0a192f, #112240, #233554);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .glass-nav {
+            background: rgba(10, 25, 47, 0.8) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1a1f3c, #2a395f);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.5) 100%);
+        }
+
+        .profile-img {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            padding: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .social-btn {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .skill-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+        }
+
+        .contact-form ::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #64ffda, #00bcd4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="text-info">&lt;</span>
+                Ashraful Momen
+                <span class="text-info">/&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white text-center py-5" style="margin-top: 56px;">
+        <div class="container py-5">
+            <img src="/api/placeholder/150/150" alt="Profile" class="rounded-circle mb-4 profile-img">
+            <h1 class="display-4 fw-bold">Ashraful Momen</h1>
+            <p class="lead mb-4">Full Stack Developer</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://github.com/Ashraful-Momen" class="btn social-btn text-white" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/md-ashraful-momen-306771159/" class="btn social-btn text-white" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="glass-card p-4">
+                        <p class="lead">
+                            A highly skilled Full Stack Engineer with 2+ years of experience and a solid foundation in modern web technologies. 
+                            Proven expertise in developing dynamic web applications using Python Django, PHP Laravel, and React. 
+                            Well-versed in Data Structures and Algorithms with a BSc in Computer Science and Engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card h-100 p-4 text-center">
+                        <i class="fas fa-code skill-icon text-info"></i>
+                        <h5 class="card-title mb-3">Frontend</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">HTML5</li>
+                            <li class="mb-2">CSS3</li>
+                            <li class="mb-2">JavaScript ES6</li>
+                            <li class="mb-2">Bootstrap 5</li>
+                            <li>React (Redux)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card h-100 p-4 text-center">
+                        <i class="fas fa-server skill-icon text-warning"></i>
+                        <h5 class="card-title mb-3">Backend</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Python Django</li>
+                            <li class="mb-2">PHP Laravel</li>
+                            <li class="mb-2">REST APIs</li>
+                            <li class="mb-2">Redis</li>
+                            <li>Celery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card h-100 p-4 text-center">
+                        <i class="fas fa-tools skill-icon text-danger"></i>
+                        <h5 class="card-title mb-3">Tools</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Docker (Swarm)</li>
+                            <li class="mb-2">Git & GitHub</li>
+                            <li class="mb-2">AWS</li>
+                            <li class="mb-2">Firebase</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card h-100 p-4 text-center">
+                        <i class="fas fa-plus-circle skill-icon text-success"></i>
+                        <h5 class="card-title mb-3">Additional</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Data Structures</li>
+                            <li class="mb-2">Algorithms</li>
+                            <li class="mb-2">Ethical Hacking</li>
+                            <li class="mb-2">System Design</li>
+                            <li>Agile/Scrum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-info mb-3">Insurance App</h5>
+                            <p class="card-text">Life & Health Insurance management system with features like order processing, commission distribution, and automated notifications.</p>
+                            <p class="card-text"><small class="text-info">Laravel, MySQL, Redis, REST API</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning mb-3">E-commerce Platform</h5>
+                            <p class="card-text">Full-featured e-commerce application with payment integration, order management, and real-time notifications.</p>
+                            <p class="card-text"><small class="text-warning">Django, React, Redux, REST API</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger mb-3">Chatting App</h5>
+                            <p class="card-text">Real-time chat application with room server functionality and instant messaging.</p>
+                            <p class="card-text"><small class="text-danger">Laravel, WebSockets, Ajax</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="glass-card p-4">
+                        <div class="d-flex flex-column gap-4">
+                            <div>
+                                <i class="fas fa-envelope me-2 text-info"></i>
+                                <a href="mailto:amshuvo64@gmail.com" class="text-white text-decoration-none">amshuvo64@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-phone me-2 text-warning"></i>
+                                <a href="tel:+8801859385787" class="text-white text-decoration-none">+880 1859385787</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-map-marker-alt me-2 text-danger"></i>
+                                <span>Mirpur, Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <form class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="glass-card p-3">
+                <small>&copy; 2024 Ashraful Momen. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
