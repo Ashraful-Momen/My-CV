@@ -328,6 +328,7 @@
     <!-- 3. Add 'project-card' class to project cards -->
     <!-- 4. Replace 'btn-info' with 'btn-submit' -->
     <!-- 5. Add 'gradient-text' class to all skill titles and project titles -->
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
       <div class="container">
@@ -366,7 +367,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section
+    <!-- <section
       id="home"
       class="hero-section text-white text-center py-5"
       style="margin-top: 56px">
@@ -392,11 +393,36 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- About Section -->
     <section id="about" class="py-5">
-      <div class="container">
+      <div class="container" id="home">
+        <!-- Hero section  -->
+        <div class="container text-center py-5">
+          <!-- <img
+              src="/api/placeholder/150/150"
+              alt="Profile"
+              class="rounded-circle mb-4 profile-img" /> -->
+          <h1 class="display-4 fw-bold">Ashraful Momen</h1>
+          <p class="lead mb-4">Full Stack Developer</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a
+              href="https://github.com/Ashraful-Momen"
+              class="btn social-btn text-white"
+              target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/md-ashraful-momen-306771159/"
+              class="btn social-btn text-white"
+              target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+        <hr />
+        <!-- Hero section  -->
         <h2 class="text-center mb-5 section-title">About Me</h2>
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -482,7 +508,7 @@
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="glass-card h-100">
-              <div class="card-body p-3">
+              <div class="card-body p-4">
                 <h5 class="card-title text-info mb-3">Insurance App</h5>
                 <p class="card-text">
                   Life & Health Insurance management system with features like
@@ -499,7 +525,7 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="glass-card h-100">
-              <div class="card-body p-3">
+              <div class="card-body p-4">
                 <h5 class="card-title text-warning mb-3">
                   E-commerce Platform
                 </h5>
@@ -517,7 +543,7 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="glass-card h-100">
-              <div class="card-body p-3">
+              <div class="card-body p-4">
                 <h5 class="card-title text-danger mb-3">Chatting App</h5>
                 <p class="card-text">
                   Real-time chat application with room server functionality and
@@ -566,74 +592,90 @@
           </div>
           <div class="col-lg-6">
             <div class="glass-card p-4">
-                <form class="contact-form">
-                    <div class="mb-3">
-                        <input 
-                            type="text" 
-                            class="form-control bg-transparent" 
-                            placeholder="Your Name" 
-                            required 
-                            style="color: #fff; border: 1px solid rgba(255, 255, 255, 0.2);"
-                        />
-                    </div>
-                    <div class="mb-3">
-                        <input 
-                            type="email" 
-                            class="form-control bg-transparent" 
-                            placeholder="Your Email" 
-                            required 
-                            style="color: #fff; border: 1px solid rgba(255, 255, 255, 0.2);"
-                        />
-                    </div>
-                    <div class="mb-3">
-                        <input 
-                            type="text" 
-                            class="form-control bg-transparent" 
-                            placeholder="Subject" 
-                            required 
-                            style="color: #fff; border: 1px solid rgba(255, 255, 255, 0.2);"
-                        />
-                    </div>
-                    <div class="mb-3">
-                        <textarea 
-                            class="form-control bg-transparent" 
-                            rows="4" 
-                            placeholder="Your Message" 
-                            required 
-                            style="color: #fff; border: 1px solid rgba(255, 255, 255, 0.2);"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn w-100" style="background: linear-gradient(45deg, #00ff88, #00ffee); color: #000; font-weight: 500; transition: all 0.3s ease;">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        
-            <style>
-                .contact-form input::placeholder,
-                .contact-form textarea::placeholder {
-                    color: rgba(255, 255, 255, 0.6) !important;
-                }
-        
-                .contact-form input:focus,
-                .contact-form textarea:focus {
-                    background-color: rgba(255, 255, 255, 0.1) !important;
-                    border-color: #00ff88 !important;
-                    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2) !important;
-                    color: #fff !important;
-                }
-        
-                .contact-form input,
-                .contact-form textarea {
+              <form class="contact-form">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Your Name"
+                    required
+                    style="
+                      color: #fff;
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                    " />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bg-transparent"
+                    placeholder="Your Email"
+                    required
+                    style="
+                      color: #fff;
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                    " />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    placeholder="Subject"
+                    required
+                    style="
+                      color: #fff;
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                    " />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control bg-transparent"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                    style="
+                      color: #fff;
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                    "></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn w-100"
+                  style="
+                    background: linear-gradient(45deg, #00ff88, #00ffee);
+                    color: #000;
+                    font-weight: 500;
                     transition: all 0.3s ease;
-                }
-        
-                .contact-form button:hover {
-                    transform: translateY(-2px);
-                    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
-                }
+                  ">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <style>
+              .contact-form input::placeholder,
+              .contact-form textarea::placeholder {
+                color: rgba(255, 255, 255, 0.6) !important;
+              }
+
+              .contact-form input:focus,
+              .contact-form textarea:focus {
+                background-color: rgba(255, 255, 255, 0.1) !important;
+                border-color: #00ff88 !important;
+                box-shadow: 0 0 10px rgba(0, 255, 136, 0.2) !important;
+                color: #fff !important;
+              }
+
+              .contact-form input,
+              .contact-form textarea {
+                transition: all 0.3s ease;
+              }
+
+              .contact-form button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+              }
             </style>
-        </div>
+          </div>
         </div>
       </div>
     </section>
